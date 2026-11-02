@@ -94,11 +94,13 @@
   <div class="page">
 
     <h1>Privacy Policy for Any Play</h1>
-    <p class="updated">Last updated: October 10, 2026</p>
+    <p class="updated">Last updated: November 2, 2026</p>
 
     <p>
       Any Play ("the app") lets you play RPG Maker MV/MZ games stored on your
-      own device. This page explains what information the app and its
+      own device. For some other game types (RPG Maker XP, VX and VX Ace games, and
+      Ren'Py 7/8 games), Any Play can open the game in an optional separate
+      companion app ("plugin app"). This page explains what information the app and its
       third-party services collect, and how it's used.
     </p>
 
@@ -151,12 +153,47 @@
       such a game, Any Play extracts the game's files from that file into
       the same folder on your device so they can be played.
     </p>
+    <p>
+      Some RPG Maker XP, VX and VX Ace games are distributed as a
+      <code>.zip</code> file. When you add one, Any Play unpacks it once into
+      a normal folder on your device (next to the zip file, or in
+      <code>Downloads/AnyPlay</code> if that is not possible), and then plays
+      the game from that folder. Unpacking is done on your device only.
+      Ren'Py games in a <code>.zip</code> file are not unpacked: the game is
+      read directly from the zip file on your device.
+    </p>
     <ul>
       <li>Extraction happens entirely on your device. Nothing is uploaded or sent over the internet.</li>
       <li>Files already in your folder (for example your own save files) are never overwritten.</li>
-      <li>After a successful extraction, the app asks whether you want to delete the original packed file to save
-        space. It is deleted only if you agree, and only after the app has checked that the extracted game is
-        complete. You can choose to keep it.</li>
+      <li>After a successful extraction, the app asks whether you want to delete the original packed file (or the
+        original zip file) to save space. It is deleted only if you agree, and only after the app has checked that
+        the extracted game is complete. You can choose to keep it.</li>
+    </ul>
+
+    <h2>Plugin apps (RPG Maker XP/VX/VX Ace and Ren'Py 7/8 games)</h2>
+    <p>
+      Games that cannot run inside Any Play itself are opened in a separate
+      optional plugin app: the "AnyPlay RGSS Plugin" for RPG Maker XP, VX and
+      VX Ace games, and the Ren'Py plugin apps for Ren'Py 7 and 8 games. When
+      you open such a game, Any Play starts the matching plugin app and tells
+      it the location of the game on your device. The plugin app then runs the
+      game from there. All plugin apps work the same way with regard to your
+      data:
+    </p>
+    <ul>
+      <li>A plugin app is a game player. It does not show ads, has no account or sign-in, and contains no
+        analytics or crash-reporting service.</li>
+      <li>A plugin app does not collect, store or send personal information, and it does not send your game
+        files or save data anywhere.</li>
+      <li>Like Any Play, a plugin app needs access to files on your device ("All files access") so it can read the
+        game you chose and save your progress next to it.</li>
+      <li>It may place small plain-text files in the game folder (for example a short log used to find problems
+        when a game does not start). These stay on your device. Nothing is uploaded, and you can delete them at any
+        time.</li>
+      <li>Optional on-screen touch controls and an in-game options menu may be included. Your choices there are
+        saved only on your device.</li>
+      <li>Some games have online features of their own. Those features are provided by the game itself, not by Any
+        Play or a plugin app, and are covered by that game's own terms.</li>
     </ul>
 
     <h2>Notifications and background activity</h2>
@@ -174,12 +211,18 @@
       are created and shown on your device only; the app does not collect or
       send any information through them.
     </p>
+    <p>
+      Unpacking an XP, VX or VX Ace zip file happens while the Any Play
+      screen is open, and the screen is kept on until it finishes. You can
+      cancel at any time, and any partly unpacked files are removed.
+    </p>
 
     <h2>What this app does not do</h2>
     <ul>
       <li>No account or sign-in is required or offered.</li>
       <li>No personal information (name, email, phone number) is collected by the app itself.</li>
       <li>No analytics or crash-reporting SDK is included beyond what AdMob itself uses for ad delivery.</li>
+      <li>The plugin apps do not collect or share any data, and they do not include advertising.</li>
       <li>Game files never leave your device — they're served only to the app's own in-app browser component over a
         local, device-only connection, never over the internet.</li>
     </ul>
